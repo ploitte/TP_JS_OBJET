@@ -1,0 +1,107 @@
+html {
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  position: relative; }
+  body .removeFest {
+    z-index: 1;
+    position: absolute;
+    left: 1%;
+    top: 7%;
+    height: 40px;
+    width: 80px;
+    background-color: red; }
+  body .testConsoleLog {
+    height: 60px;
+    width: 60px;
+    background-color: red; }
+  body #map {
+    width: 100%;
+    height: 100%; }
+  body .add {
+    z-index: 1;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/add.png");
+    cursor: pointer;
+    border-radius: 50%; }
+  body .add:hover {
+    opacity: 0.6; }
+  body .test {
+    animation: adding 0.8s ease-in-out forwards; }
+  body .test2 {
+    animation: removing 0.8s ease-in-out forwards; }
+
+@keyframes adding {
+  50% {
+    transform: rotate(360deg) scale(0.7); }
+  100% {
+    transform: rotate(720deg) scale(1); } }
+
+@keyframes removing {
+  50% {
+    transform: rotate(-360deg) scale(0.7); }
+  100% {
+    transform: rotate(-720deg) scale(1); } }
+  body input {
+    margin: 0; }
+  body .popAdd {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 15%;
+    top: calc(50% - 18%);
+    left: -50%;
+    transition: left 0.8s ease-in-out;
+    background-color: brown;
+    border-radius: 8%;
+    box-shadow: 0 0 10px 0; }
+  body .popSearch {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 15%;
+    top: calc(50% - 18%);
+    right: 1%;
+    transition: left 0.8s ease-in-out;
+    background-color: brown;
+    border-radius: 8%;
+    box-shadow: 0 0 10px 0; }
+    body .popSearch #formSearch {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  body h2 {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  body #tabAdd {
+    width: 100%; }
+  body #tabAdd tr td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    body #tabAdd tr td input[type="text"] {
+      width: 100%; }
+    body #tabAdd tr td label {
+      width: 41%; }
+    body #tabAdd tr td select {
+      width: 100%; }
+  body .contInput {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  body #other {
+    display: none; }
